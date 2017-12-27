@@ -6,14 +6,63 @@
 	objectVersion = 48;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		14B650541FF388E200434AE8 /* SWAggregate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 14B650551FF388E200434AE8 /* Build configuration list for PBXAggregateTarget "SWAggregate" */;
+			buildPhases = (
+				14B6505A1FF388F000434AE8 /* ShellScript */,
+			);
+			dependencies = (
+				14B650591FF388EB00434AE8 /* PBXTargetDependency */,
+			);
+			name = SWAggregate;
+			productName = SWAggregate;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		14B650171FF3835200434AE8 /* SWUIKitExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B6500D1FF3835200434AE8 /* SWUIKitExtensions.framework */; };
 		14B6501C1FF3835200434AE8 /* SWUIKitExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B6501B1FF3835200434AE8 /* SWUIKitExtensionsTests.swift */; };
 		14B6501E1FF3835200434AE8 /* SWUIKitExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 14B650101FF3835200434AE8 /* SWUIKitExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14B650371FF384F000434AE8 /* UITextViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B650271FF384EE00434AE8 /* UITextViewExtension.swift */; };
+		14B650381FF384F000434AE8 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B650281FF384EE00434AE8 /* UIApplicationExtension.swift */; };
+		14B6503A1FF384F000434AE8 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B6502A1FF384EE00434AE8 /* UIColorExtension.swift */; };
+		14B6503B1FF384F000434AE8 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B6502B1FF384EE00434AE8 /* UIViewExtension.swift */; };
+		14B6503C1FF384F000434AE8 /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B6502C1FF384EF00434AE8 /* UIScrollViewExtension.swift */; };
+		14B6503D1FF384F000434AE8 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B6502D1FF384EF00434AE8 /* UITextFieldExtension.swift */; };
+		14B6503E1FF384F000434AE8 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B6502E1FF384EF00434AE8 /* UITableViewExtension.swift */; };
+		14B6503F1FF384F000434AE8 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B6502F1FF384EF00434AE8 /* UIImageExtension.swift */; };
+		14B650401FF384F000434AE8 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B650301FF384EF00434AE8 /* UIDeviceExtension.swift */; };
+		14B650411FF384F000434AE8 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B650311FF384EF00434AE8 /* UIButtonExtension.swift */; };
+		14B650431FF384F000434AE8 /* UISearchBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B650331FF384EF00434AE8 /* UISearchBarExtension.swift */; };
+		14B650441FF384F000434AE8 /* UITextFieldExtension-Shake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B650341FF384F000434AE8 /* UITextFieldExtension-Shake.swift */; };
+		14B650461FF384F000434AE8 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B650361FF384F000434AE8 /* UIStoryboardExtension.swift */; };
+		14B650471FF388B000434AE8 /* UIApplicationExtension.swift in Headers */ = {isa = PBXBuildFile; fileRef = 14B650281FF384EE00434AE8 /* UIApplicationExtension.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		14B650481FF388B000434AE8 /* UIButtonExtension.swift in Headers */ = {isa = PBXBuildFile; fileRef = 14B650311FF384EF00434AE8 /* UIButtonExtension.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		14B650491FF388B000434AE8 /* UIColorExtension.swift in Headers */ = {isa = PBXBuildFile; fileRef = 14B6502A1FF384EE00434AE8 /* UIColorExtension.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		14B6504A1FF388B000434AE8 /* UIDeviceExtension.swift in Headers */ = {isa = PBXBuildFile; fileRef = 14B650301FF384EF00434AE8 /* UIDeviceExtension.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		14B6504B1FF388B000434AE8 /* UIImageExtension.swift in Headers */ = {isa = PBXBuildFile; fileRef = 14B6502F1FF384EF00434AE8 /* UIImageExtension.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		14B6504C1FF388B000434AE8 /* UIScrollViewExtension.swift in Headers */ = {isa = PBXBuildFile; fileRef = 14B6502C1FF384EF00434AE8 /* UIScrollViewExtension.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		14B6504D1FF388B000434AE8 /* UISearchBarExtension.swift in Headers */ = {isa = PBXBuildFile; fileRef = 14B650331FF384EF00434AE8 /* UISearchBarExtension.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		14B6504E1FF388B000434AE8 /* UIStoryboardExtension.swift in Headers */ = {isa = PBXBuildFile; fileRef = 14B650361FF384F000434AE8 /* UIStoryboardExtension.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		14B6504F1FF388B000434AE8 /* UITableViewExtension.swift in Headers */ = {isa = PBXBuildFile; fileRef = 14B6502E1FF384EF00434AE8 /* UITableViewExtension.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		14B650501FF388B000434AE8 /* UITextFieldExtension-Shake.swift in Headers */ = {isa = PBXBuildFile; fileRef = 14B650341FF384F000434AE8 /* UITextFieldExtension-Shake.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		14B650511FF388B000434AE8 /* UITextFieldExtension.swift in Headers */ = {isa = PBXBuildFile; fileRef = 14B6502D1FF384EF00434AE8 /* UITextFieldExtension.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		14B650521FF388B000434AE8 /* UITextViewExtension.swift in Headers */ = {isa = PBXBuildFile; fileRef = 14B650271FF384EE00434AE8 /* UITextViewExtension.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		14B650531FF388B000434AE8 /* UIViewExtension.swift in Headers */ = {isa = PBXBuildFile; fileRef = 14B6502B1FF384EE00434AE8 /* UIViewExtension.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		14B6505C1FF3895000434AE8 /* SWUIKitExtensions.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 14B6505B1FF3895000434AE8 /* SWUIKitExtensions.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		14B650181FF3835200434AE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14B650041FF3835200434AE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14B6500C1FF3835200434AE8;
+			remoteInfo = SWUIKitExtensions;
+		};
+		14B650581FF388EB00434AE8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 14B650041FF3835200434AE8 /* Project object */;
 			proxyType = 1;
@@ -29,6 +78,20 @@
 		14B650161FF3835200434AE8 /* SWUIKitExtensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWUIKitExtensionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14B6501B1FF3835200434AE8 /* SWUIKitExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWUIKitExtensionsTests.swift; sourceTree = "<group>"; };
 		14B6501D1FF3835200434AE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14B650271FF384EE00434AE8 /* UITextViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextViewExtension.swift; sourceTree = "<group>"; };
+		14B650281FF384EE00434AE8 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
+		14B6502A1FF384EE00434AE8 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		14B6502B1FF384EE00434AE8 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		14B6502C1FF384EF00434AE8 /* UIScrollViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtension.swift; sourceTree = "<group>"; };
+		14B6502D1FF384EF00434AE8 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		14B6502E1FF384EF00434AE8 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		14B6502F1FF384EF00434AE8 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		14B650301FF384EF00434AE8 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
+		14B650311FF384EF00434AE8 /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		14B650331FF384EF00434AE8 /* UISearchBarExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISearchBarExtension.swift; sourceTree = "<group>"; };
+		14B650341FF384F000434AE8 /* UITextFieldExtension-Shake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextFieldExtension-Shake.swift"; sourceTree = "<group>"; };
+		14B650361FF384F000434AE8 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
+		14B6505B1FF3895000434AE8 /* SWUIKitExtensions.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SWUIKitExtensions.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +116,7 @@
 		14B650031FF3835200434AE8 = {
 			isa = PBXGroup;
 			children = (
+				14B6505B1FF3895000434AE8 /* SWUIKitExtensions.podspec */,
 				14B6500F1FF3835200434AE8 /* SWUIKitExtensions */,
 				14B6501A1FF3835200434AE8 /* SWUIKitExtensionsTests */,
 				14B6500E1FF3835200434AE8 /* Products */,
@@ -71,6 +135,19 @@
 		14B6500F1FF3835200434AE8 /* SWUIKitExtensions */ = {
 			isa = PBXGroup;
 			children = (
+				14B650281FF384EE00434AE8 /* UIApplicationExtension.swift */,
+				14B650311FF384EF00434AE8 /* UIButtonExtension.swift */,
+				14B6502A1FF384EE00434AE8 /* UIColorExtension.swift */,
+				14B650301FF384EF00434AE8 /* UIDeviceExtension.swift */,
+				14B6502F1FF384EF00434AE8 /* UIImageExtension.swift */,
+				14B6502C1FF384EF00434AE8 /* UIScrollViewExtension.swift */,
+				14B650331FF384EF00434AE8 /* UISearchBarExtension.swift */,
+				14B650361FF384F000434AE8 /* UIStoryboardExtension.swift */,
+				14B6502E1FF384EF00434AE8 /* UITableViewExtension.swift */,
+				14B650341FF384F000434AE8 /* UITextFieldExtension-Shake.swift */,
+				14B6502D1FF384EF00434AE8 /* UITextFieldExtension.swift */,
+				14B650271FF384EE00434AE8 /* UITextViewExtension.swift */,
+				14B6502B1FF384EE00434AE8 /* UIViewExtension.swift */,
 				14B650101FF3835200434AE8 /* SWUIKitExtensions.h */,
 				14B650111FF3835200434AE8 /* Info.plist */,
 			);
@@ -94,6 +171,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				14B6501E1FF3835200434AE8 /* SWUIKitExtensions.h in Headers */,
+				14B650471FF388B000434AE8 /* UIApplicationExtension.swift in Headers */,
+				14B650481FF388B000434AE8 /* UIButtonExtension.swift in Headers */,
+				14B650491FF388B000434AE8 /* UIColorExtension.swift in Headers */,
+				14B6504A1FF388B000434AE8 /* UIDeviceExtension.swift in Headers */,
+				14B6504B1FF388B000434AE8 /* UIImageExtension.swift in Headers */,
+				14B6504C1FF388B000434AE8 /* UIScrollViewExtension.swift in Headers */,
+				14B6504D1FF388B000434AE8 /* UISearchBarExtension.swift in Headers */,
+				14B6504E1FF388B000434AE8 /* UIStoryboardExtension.swift in Headers */,
+				14B6504F1FF388B000434AE8 /* UITableViewExtension.swift in Headers */,
+				14B650501FF388B000434AE8 /* UITextFieldExtension-Shake.swift in Headers */,
+				14B650511FF388B000434AE8 /* UITextFieldExtension.swift in Headers */,
+				14B650521FF388B000434AE8 /* UITextViewExtension.swift in Headers */,
+				14B650531FF388B000434AE8 /* UIViewExtension.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,9 +238,14 @@
 				TargetAttributes = {
 					14B6500C1FF3835200434AE8 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					14B650151FF3835200434AE8 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					14B650541FF388E200434AE8 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
@@ -170,6 +265,7 @@
 			targets = (
 				14B6500C1FF3835200434AE8 /* SWUIKitExtensions */,
 				14B650151FF3835200434AE8 /* SWUIKitExtensionsTests */,
+				14B650541FF388E200434AE8 /* SWAggregate */,
 			);
 		};
 /* End PBXProject section */
@@ -179,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14B6505C1FF3895000434AE8 /* SWUIKitExtensions.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,11 +288,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14B6505A1FF388F000434AE8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FMK_NAME=${PROJECT_NAME}\n\n# Install dir will be the final output to the framework.\n\n# The following line create it in the root folder of the current project.\n\nINSTALL_DIR=${SRCROOT}/Products/${FMK_NAME}.framework\n\n# Working dir will be deleted after the framework creation.\n\nWRK_DIR=build\n\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\n\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n\n# -configuration ${CONFIGURATION}\n\n# Clean and Building both architectures.\n\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos clean build\n\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator clean build\n\n# Cleaning the oldest.\n\nif [ -d \"${INSTALL_DIR}\" ]\n\nthen\n\nrm -rf \"${INSTALL_DIR}\"\n\nfi\n\nmkdir -p \"${INSTALL_DIR}\"\n\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\n\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\n\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}\"\n\nrm -r \"${WRK_DIR}\"\n\nopen \"${INSTALL_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		14B650081FF3835200434AE8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14B650431FF384F000434AE8 /* UISearchBarExtension.swift in Sources */,
+				14B6503B1FF384F000434AE8 /* UIViewExtension.swift in Sources */,
+				14B650411FF384F000434AE8 /* UIButtonExtension.swift in Sources */,
+				14B650381FF384F000434AE8 /* UIApplicationExtension.swift in Sources */,
+				14B6503D1FF384F000434AE8 /* UITextFieldExtension.swift in Sources */,
+				14B6503E1FF384F000434AE8 /* UITableViewExtension.swift in Sources */,
+				14B650371FF384F000434AE8 /* UITextViewExtension.swift in Sources */,
+				14B650401FF384F000434AE8 /* UIDeviceExtension.swift in Sources */,
+				14B650441FF384F000434AE8 /* UITextFieldExtension-Shake.swift in Sources */,
+				14B650461FF384F000434AE8 /* UIStoryboardExtension.swift in Sources */,
+				14B6503F1FF384F000434AE8 /* UIImageExtension.swift in Sources */,
+				14B6503A1FF384F000434AE8 /* UIColorExtension.swift in Sources */,
+				14B6503C1FF384F000434AE8 /* UIScrollViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +340,11 @@
 			isa = PBXTargetDependency;
 			target = 14B6500C1FF3835200434AE8 /* SWUIKitExtensions */;
 			targetProxy = 14B650181FF3835200434AE8 /* PBXContainerItemProxy */;
+		};
+		14B650591FF388EB00434AE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14B6500C1FF3835200434AE8 /* SWUIKitExtensions */;
+			targetProxy = 14B650581FF388EB00434AE8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -334,6 +465,7 @@
 		14B650221FF3835200434AE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -348,6 +480,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.seven.SWUIKitExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -356,6 +489,7 @@
 		14B650231FF3835200434AE8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -378,6 +512,7 @@
 		14B650251FF3835200434AE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SWUIKitExtensionsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -391,6 +526,7 @@
 		14B650261FF3835200434AE8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SWUIKitExtensionsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -398,6 +534,22 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		14B650561FF388E200434AE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		14B650571FF388E200434AE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -427,6 +579,15 @@
 			buildConfigurations = (
 				14B650251FF3835200434AE8 /* Debug */,
 				14B650261FF3835200434AE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14B650551FF388E200434AE8 /* Build configuration list for PBXAggregateTarget "SWAggregate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14B650561FF388E200434AE8 /* Debug */,
+				14B650571FF388E200434AE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
