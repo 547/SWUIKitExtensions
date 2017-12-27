@@ -250,8 +250,6 @@ SWIFT_MODULE_NAMESPACE_PUSH("SWUIKitExtensions")
 
 
 
-
-
 @interface UIView (SWIFT_EXTENSION(SWUIKitExtensions))
 @property (nonatomic) CGFloat cornerRadius;
 @property (nonatomic, strong) UIColor * _Nullable borderColor;

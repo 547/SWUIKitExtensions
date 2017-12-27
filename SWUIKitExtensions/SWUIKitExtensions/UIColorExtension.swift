@@ -54,43 +54,6 @@ public extension UIColor {
         return (fRed, fGreen, fBlue, fAlpha)
     }
 }
-public extension UIColor {
-    class func RGBColor16(value:NSString) -> UIColor {
-        return self.RGBColor16(value: value, alpha: 1.0)
-    }
-    class func RGBColor16(value:NSString,alpha:CGFloat) -> UIColor {
-        var color = UIColor.red
-        //去除空格
-        var cStr : String = value.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).uppercased()
-        
-        if cStr.hasPrefix("#") {
-            let index = cStr.index(after: cStr.startIndex)
-            let sub = String(cStr[index...])
-            cStr = sub
-        }
-        if cStr.count != 6 {
-            return UIColor.black
-        }
-        
-        let rRange = cStr.startIndex ..< cStr.index(cStr.startIndex, offsetBy: 2)
-        let rStr = String(cStr[rRange])
-        
-        let gRange = cStr.index(cStr.startIndex, offsetBy: 2) ..< cStr.index(cStr.startIndex, offsetBy: 4)
-        let gStr = String(cStr[gRange])
-        
-        let bIndex = cStr.index(cStr.endIndex, offsetBy: -2)
-        let bStr = String(cStr[bIndex...])
-        
-        var r:CUnsignedInt = 0, g:CUnsignedInt = 0, b:CUnsignedInt = 0;
-        Scanner(string: rStr).scanHexInt32(&r)
-        Scanner(string: gStr).scanHexInt32(&g)
-        Scanner(string: bStr).scanHexInt32(&b)
-        
-        color = UIColor(red: CGFloat(r) / 255.0, green: CGFloat(g) / 255.0, blue: CGFloat(b) / 255.0, alpha: alpha)
-        
-        return color
-    }
-}
 
 public extension UIColor {
     struct Flat {
