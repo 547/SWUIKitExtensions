@@ -40,7 +40,7 @@ public extension UIImage {
     }
     
     //MARK:旋转图片
-    func rotate(orientation:UIImageOrientation) -> UIImage {
+    func rotate(orientation:UIImage.Orientation) -> UIImage {
         return UIImage.init(cgImage: self.cgImage!, scale: self.scale, orientation: orientation)
     }
 }
@@ -65,15 +65,15 @@ public extension UIImage {
     public func compressImage(memsize:Int, byteUnits:ByteUnits) -> Data?{
         var compress:CGFloat = 1.0
         var imageData:Data
-        if let jpgData = UIImageJPEGRepresentation(self, compress){
+        if let jpgData = self.jpegData(compressionQuality: compress){
             imageData = jpgData
-        } else if let pngData = UIImagePNGRepresentation(self){
+        } else if let pngData = self.pngData(){
             imageData = pngData
         } else { return nil }
         let byteSize = byteUnits.getBytes(with: memsize)
         while imageData.count > byteSize && compress > 0.000001 {
             compress -= 0.001
-            guard let data = UIImageJPEGRepresentation(self, compress) else { break }
+            guard let data = self.jpegData(compressionQuality: compress) else { break }
             imageData = data
         }
         return imageData.count > byteSize ? nil : imageData

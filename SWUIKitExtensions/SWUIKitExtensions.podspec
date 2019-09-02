@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = "SWUIKitExtensions"
-s.version          = "1.0.1"
+s.version          = "1.0.2"
 s.summary          = "UIKit Extensions"
 s.homepage         = "https://github.com/547/SWUIKitExtensions"
 s.license          = 'MIT'
